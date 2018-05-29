@@ -98,6 +98,8 @@ int main()
 		for(int j = 0; j < 9; j++)
 		{
 			cin >> grid[i][j];
+			//Basic Input Validation
+			assert(("Invalid Input",  (grid[i][j] >= 0) && (grid[i][j] <= 9)) );
 		}
 	}
 	if(solveSudoku(grid))
